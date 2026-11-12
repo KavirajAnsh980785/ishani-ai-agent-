@@ -1,0 +1,108 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #fff;
+  background: #100c1b;
+}
+.ishani-app {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #542343, #100c1b 70%);
+}
+.topbar {
+  min-height: 74px;
+  padding: 12px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #160f22;
+  border-bottom: 1px solid #493047;
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand-icon {
+  width: 44px; height: 44px; border-radius: 14px;
+  display: grid; place-items: center; font-size: 24px; font-weight: 700;
+  background: linear-gradient(135deg, #ff65a5, #9c55ff);
+}
+.brand h2 { margin: 0; font-size: 20px; }
+.brand span { color: #d3a9ca; font-size: 12px; }
+.online { color: #a6ffbc; font-size: 13px; }
+.online i {
+  display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  background: #48ed85; margin-right: 5px;
+}
+.main-content { max-width: 850px; margin: auto; padding: 28px 18px; }
+.profile { text-align: center; padding: 18px 0 26px; }
+.avatar {
+  width: 150px; height: 150px; border-radius: 50%;
+  object-fit: cover; object-position: center 25%;
+  border: 4px solid rgba(255,255,255,.8);
+  box-shadow: 0 0 35px #e64d9c66;
+}
+.profile h1 { margin: 12px 0 6px; }
+.profile p { color: #e3c6df; margin: 6px 0; }
+.voice-status { color: #ffacd0; margin-top: 12px; min-height: 20px; }
+.chat-box {
+  background: #1b1427; border: 1px solid #513653; border-radius: 20px;
+  padding: 20px; min-height: 190px; max-height: 390px; overflow-y: auto;
+}
+.message {
+  max-width: 85%; padding: 12px 16px; border-radius: 15px;
+  margin-bottom: 14px; white-space: pre-wrap; overflow-wrap: anywhere;
+}
+.message span { font-size: 12px; color: #ffacd0; }
+.message p { margin: 6px 0 0; line-height: 1.7; }
+.message.ishani { background: #38233f; }
+.message.you { background: #55306d; margin-left: auto; }
+.controls { text-align: center; margin: 22px 0; }
+.mic-button {
+  padding: 14px 30px; border: 0; border-radius: 40px;
+  background: linear-gradient(100deg, #ff579d, #9e59ff);
+  color: white; font-size: 16px; cursor: pointer;
+}
+.mic-button:disabled { opacity: .7; cursor: wait; }
+.input-row { display: flex; gap: 10px; margin-top: 18px; }
+.input-row input {
+  flex: 1; min-width: 0; padding: 14px; border-radius: 12px;
+  border: 1px solid #62436c; background: #21182e; color: white;
+  outline: none; font-size: 15px;
+}
+.input-row input::placeholder { color: #b9a4bd; }
+button { font: inherit; }
+.input-row button, .quick-actions button {
+  border: 0; border-radius: 12px; padding: 12px 18px;
+  color: white; background: #a84c9d; cursor: pointer;
+}
+.quick-actions {
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 10px; margin-top: 16px;
+}
+.quick-actions button { background: #382744; border: 1px solid #754c79; }
+.wa-hint {
+  color: #c9b5ce; font-size: 12px; line-height: 1.6;
+  margin: 18px auto 0; overflow-wrap: anywhere;
+}
+footer { text-align: center; color: #b99bb9; padding: 18px; }
+@media (max-width: 600px) {
+  .topbar { padding: 12px 4%; }
+  .main-content { padding: 18px 12px; }
+  .avatar { width: 125px; height: 125px; }
+  .message { max-width: 95%; }
+}
+
+/* ISHANI AI 3.0 - BIG ROUND PROFILE PHOTO */
+img[src*="ishani.png"] {
+    width: 160px !important;
+    height: 160px !important;
+    min-width: 160px !important;
+    min-height: 160px !important;
+    max-width: 160px !important;
+    max-height: 160px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 0 22px rgba(120, 80, 255, 0.6) !important;
+}
+
